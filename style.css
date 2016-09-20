@@ -1,0 +1,164 @@
+
+html, body {
+	background-color: #e6e6e6;
+	overflow-x: hidden; 
+	font-family: Tahoma;
+}
+
+body {
+	margin:0;
+}
+
+h4 {
+	margin-top: 10px;
+}
+
+.myList {
+	margin: 0 0 10px 0;
+	position: relative;
+	background: white;
+}
+
+.myDetail {
+	position: relative;
+	background-color: white;
+}
+.myBtn {
+	float: right;
+	width: 100px;
+	background-color: #e6e6e6;
+	border: none;
+	font-size: 16px;
+	color: #b3b3b3;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.pagination {
+	color: black;
+	text-align: center;
+}
+
+.sort {
+	margin-bottom: 10px;
+}
+
+.myBtn:focus {
+	background-color: #ff9900;
+	color: black;
+}
+
+.fit-img {
+	margin-left: -15px;
+	margin-right: -15px;
+	
+}
+
+.apt-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.detail-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.detail-title {
+	padding-bottom: 10px;
+	color: white;
+}
+
+.detail-title a {
+	text-decoration: none;
+	color: white;
+}
+.box {
+	/*display: inline-block;
+	position: absolute;*/
+	margin-left: 5px;
+	height: 100%;
+}
+
+.detail-box {
+	/*display: inline-block;
+	position: absolute;
+	height: 100%;*/
+	height: 100%;
+	text-align: right;
+}
+
+.infomation {
+	height: 200px;
+}
+
+.myList:hover {
+	background: #cccccc;
+	cursor:pointer;
+}
+
+.info-title:hover {
+	text-decoration: underline;
+}
+
+a .info-title {
+	color: black;
+}
+
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #b3b3b3;
+}
+
+
+.info-location {
+	color: #b3b3b3;
+}
+
+.price {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 0 15px 15px 0;
+	color: #ff9900;
+	text-align: right;
+}
+
+.detail-price {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 0 15px 0 0;
+	color: #ff9900;
+	text-align: right;
+}
+
+.apply {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.price-em {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.title-bar {
+	background-color: black;
+	color: white;
+}
+
+.description-bar {
+	background-color: #666666;
+	position: relative;
+	height: 100%;
+}
+
+.description-title {
+	color: white;
+}
+

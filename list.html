@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <h3>Minneapolis, MN: {{aptNumber}} Apartments</h3>
+    <div class="row sort">
+        <button class="myBtn" ng-click="changeSort('price')">Price</button>
+        <button class="myBtn" ng-click="changeSort('popularity')" autofocus>Popularity</button>
+    </div>
+    <div ng-repeat="apt in apts | orderBy:order:true | limitTo:pages:currentPage*pages">
+        <a href="#/detail">
+            <div class="row myList" ng-click="trackDetail(apt.name)">
+                <div class="fit-img col-sm-5 col-xs-12">
+                    <img ng-src="{{apt.image}}" class="apt-img" alt="image">
+                </div>
+                <div class="box col-sm-7 col-xs-12">
+                    <div class="infomation">
+                        <div class="info-title">
+                            <h4>{{apt.name}}</h4>
+                        </div>
+                        <hr>
+                        <div class="info-location">
+                            <span>{{apt.description.split(',')[0] + ',' +apt.description.split(',')[1]}}</span>
+                            <br>
+                            <span>{{apt.description.split(',')[2] + ',' +apt.description.split(',')[3]}}</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>From<span class="price-em"> ${{apt.price}}</span></span>
+                        <br>
+                        <span>USD/Month</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="pagination">
+        <button ng-disabled="currentPage === 0" ng-click="currentPage = currentPage-1">Previous</button>
+        <button ng-disabled="currentPage >= pageNum -1" ng-click="currentPage = currentPage+1">Next</button>
+    </div>
+</div>

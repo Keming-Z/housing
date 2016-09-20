@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row title-bar">
+        <div class="col-sm-offset-1 col-xs-offset-1 detail-title">
+            <a href="#/list">
+                <h3>WE</h3>
+            </a>
+        </div>
+    </div>
+    <div class="row myDetail">
+        <div class="col-sm-6 col-xs-12 col-sm-offset-1">
+            <img ng-src="{{apt.image}}" class="detail-img" alt="image">
+        </div>
+        <div class="col-sm-3 col-xs-12 detail-box">
+            <div class="infomation">
+                <div class="info-title">
+                    <h4>{{apt.name}}</h4>
+                </div>
+                <hr>
+                <div class="info-location">
+                    <span>{{apt.description.split(',')[0] + ',' +apt.description.split(',')[1]}}</span>
+                    <br>
+                    <span>{{apt.description.split(',')[2] + ',' +apt.description.split(',')[3]}}</span>
+                </div>
+            </div>
+            <div class="detail-price">
+                <span>From<span class="price-em"> ${{apt.price}}</span></span>
+                <br>
+                <span>USD/Month</span>
+            </div>
+        </div>
+    </div>
+    <div class="row description-bar">
+        <div class="col-sm-offset-1 col-xs-offset-1 description-title">
+            <h4>Description</h4>
+        </div>
+    </div>
+</div>
